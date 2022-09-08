@@ -99,7 +99,6 @@ combo_##name {                        \
 		COMBO(vol_dn_l, &kp C_VOL_DN, 14 24)
 		COMBO(vol_up_l, &kp C_VOL_UP,  5 15)
 		COMBO(vol_dn_l, &kp C_VOL_DN, 15 25)
-		COMBO(caps_w, &caps_word,   10 19s)
 	};
 };
 
