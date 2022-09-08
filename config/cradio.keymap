@@ -152,7 +152,7 @@
         &kp RPAR    &kp EXCL    &kp AT      &kp LBRC    &kp RBRC        &kp PG_UP   &kp HOME    &kp UP      &kp END     &kp MINUS
         &kp ESC     &kp HASH    &kp ASTRK   &kp LBKT    &kp RBKT        &kp PG_DN   &kp LEFT    &kp DOWN    &kp RIGHT   &kp SQT
         &kp GRAVE   &kp DLLR    &kp AMPS    &kp LPAR    &kp TAB         &kp BSPC    &kp EQUAL   &kp DEL     &kp INS     &kp RET
-					                        &mo 1       &kp LGUI        &kp RGUI    &mo 2 
+					                        &mo 4 		&mo 4			&mo 4	    &mo 4 
 		>;
 		};
 		
