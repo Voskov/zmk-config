@@ -159,9 +159,9 @@
 		right_layer {
 		bindings = <
 	    &kp K_APP &kp F2    &kp F3    &kp F4    &kp C_VOL_UP    	&kp C_VOL_UP  &kp 7     &kp 8     &kp 9     &kp 0
-	    &kp F5    &kp F6    &kp F7    &kp F8    &kp C_VOL_DN        &kp C_VOL_DN  &kp 4     &kp 5     &kp 6     &kp BSLS
-	    &kp F9    &kp F10   &kp F11   &kp F12   &kp F1         		&kp BSPC     &kp 1     &kp 2     &kp 3     &kp ENT
-					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
+	    &kp F5    &kp F6    &kp F7    &kp F8    &kp C_VOL_DN        &kp C_VOL_DN  &kp 4     &kp 5     &kp 6     &kp BSLH
+	    &kp F9    &kp F10   &kp F11   &kp F12   &kp F1         		&kp BSPC      &kp 1     &kp 2     &kp 3     &kp RET
+					  					&mo 4 	&mo 4				&mo 4		  &mo 4	
 		>;
 		};	
 		
