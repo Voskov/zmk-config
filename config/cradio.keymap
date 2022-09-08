@@ -152,15 +152,15 @@
         &kp RPAR    &kp EXCL    &kp AT      &kp LBRC    &kp RBRC        &kp PG_UP   &kp HOME    &kp UP      &kp END     &kp MINUS
         &kp ESC     &kp HASH    &kp ASTRK   &kp LBKT    &kp RBKT        &kp PG_DN   &kp LEFT    &kp DOWN    &kp RIGHT   &kp SQT
         &kp GRAVE   &kp DLLR    &kp AMPS    &kp LPAR    &kp TAB         &kp BSPC    &kp EQUAL   &kp DEL     &kp INS     &kp RET
-					                        &mo 4 		&mo 4			&mo 4	    &mo 4 
+					                        &mo 4 		&mo 4			&mo 4	  &mo 4 
 		>;
 		};
 		
 		right_layer {
 		bindings = <
-	    &kp K_APP &kp F2    &kp F3    &kp F4    &kp C_VOL_UP    	&kp C_VOL_UP  &kp 7     &kp 8     &kp 9     &kp 0
-	    &kp F5    &kp F6    &kp F7    &kp F8    &kp C_VOL_DN        &kp C_VOL_DN  &kp 4     &kp 5     &kp 6     &kp BSLH
-	    &kp F9    &kp F10   &kp F11   &kp F12   &kp F1         		&kp BSPC      &kp 1     &kp 2     &kp 3     &kp RET
+	    &kp K_APP &kp F2    &kp F3    &kp F4    &kp C_VOL_UP    	&kp C_VOL_UP  &kp N7    &kp N8    &kp N9    &kp N0
+	    &kp F5    &kp F6    &kp F7    &kp F8    &kp C_VOL_DN        &kp C_VOL_DN  &kp N4    &kp N5    &kp N6    &kp BSLH
+	    &kp F9    &kp F10   &kp F11   &kp F12   &kp F1         		&kp BSPC      &kp N1    &kp N2    &kp N3    &kp RET
 					  					&mo 4 	&mo 4				&mo 4		  &mo 4	
 		>;
 		};	
