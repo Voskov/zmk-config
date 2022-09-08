@@ -5,11 +5,14 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define TAPPING_TERM 210
 #define QUICK_TAP    150
+
+#define ________ &trans
 
 &lt {
 	flavor = "hold-preferred";
@@ -77,9 +80,31 @@
 	};
 };
 
+#define COMBO(name, keypress, keypos) \
+combo_##name {                        \
+	timeout-ms = <30>;                \
+	bindings = <keypress>;            \
+	key-positions = <keypos>;         \
+};
+/* Combo key positions
+ 0  1  2  3  4         5  6  7  8  9
+10 11 12 13 14        15 16 17 18 19
+20 21 22 23 24        25 26 27 28 29
+			30 31  32 33             */
+
+/ {
+	combos {
+		compatible = "zmk,combos";
+		COMBO(vol_up_l, &kp C_VOL_UP,  4 14)
+		COMBO(vol_dn_l, &kp C_VOL_DN, 14 24)
+		COMBO(vol_up_l, &kp C_VOL_UP,  5 15)
+		COMBO(vol_dn_l, &kp C_VOL_DN, 15 25)
+		COMBO(caps_w, &caps_word,   10 19s)
+	};
+};
+
 #define HRML(k1,k2,k3,k4) &lht LGUI k1   &lht LALT k2   &lht LSHFT k3   &lht LCTRL k4
 #define HRMR(k1,k2,k3,k4) &rht RCTRL k1  &rht RSHFT k2  &rht RALT k3    &rht RGUI k4
-#define HT(k1,k2,k3,k4) &ht LG(V) k1  &ht LG(C) k2  &ht LG(X) k3  &ht LG(Z) k4
 
 / { 
 
@@ -108,7 +133,7 @@
 		bindings = <
         &kp RPAR    &kp EXCL    &kp AT      &kp LBRC    &kp RBRC        &kp PG_UP   &kp HOME    &kp UP      &kp END     &kp MINUS
         &kp ESC     &kp HASH    &kp ASTRK   &kp LBKT    &kp RBKT        &kp PG_DN   &kp LEFT    &kp DOWN    &kp RIGHT   &kp SQT
-        &kp GRAVE   &kp DLLR    &kp AMPS    &kp LPAR    &kp TAB         &kp BSPC    &kp EQUAL   &kp DEL     &kp INS     &kp RET
+        &kp GRAVE   &kp DLLR    &kp AMPS    &kp LPAR    &kp TAB         &kp BSPC    &kp EQUAL   &kp DEL     &kp INS     &kp FSLH
 					                        &mo 4 		&mo 4			&mo 4	  &mo 4 
 		>;
 		};
@@ -117,17 +142,17 @@
 		bindings = <
 	    &kp K_APP &kp F2    &kp F3    &kp F4    &kp C_VOL_UP    	&kp C_VOL_UP  &kp N7    &kp N8    &kp N9    &kp N0
 	    &kp F5    &kp F6    &kp F7    &kp F8    &kp C_VOL_DN        &kp C_VOL_DN  &kp N4    &kp N5    &kp N6    &kp BSLH
-	    &kp F9    &kp F10   &kp F11   &kp F12   &kp F1         		&kp BSPC      &kp N1    &kp N2    &kp N3    &kp RET
+	    &kp F9    &kp F10   &kp F11   &kp F12   &kp F1         		&kp BSPC      &kp N1    &kp N2    &kp N3    &kp FSLH
 					  					&mo 4 	&mo 4				&mo 4		  &mo 4	
 		>;
 		};	
 		
-		tri_layer {
+		conf_layer {
 		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &trans  					&trans &trans 
+		&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 4	&bt BT_SEL 5		________	________	________	________	________
+		&reset		&bt BT_PRV	&bt BT_NXT	________	&out OUT_BLE						________	________	________	________	&reset
+		&bootloader	&bt BT_CLR	________	________	&out OUT_USB						________	________	________	________	&bootloader
+										________	________		________	________
 		>;
 		};	
         
