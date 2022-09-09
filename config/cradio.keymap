@@ -138,10 +138,10 @@ combo_##name {                        \
 		
 		conf_layer {
 		bindings = <
-		&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 4	&bt BT_SEL 5		________	________	________	________	________
-		&reset		&bt BT_PRV	&bt BT_NXT	________	&out OUT_BLE						________	________	________	________	&reset
-		&bootloader	&bt BT_CLR	________	________	&out OUT_USB						________	________	________	________	&bootloader
-										________	________		________	________
+		&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 4	&bt BT_SEL 5			&kp V	&trans 	&trans 	&trans 	&trans 	
+		&reset			&bt BT_PRV		&bt BT_NXT		&trans 	 		&out OUT_BLE			&trans 	&trans 	&trans 	&trans 	&reset
+		&bootloader		&bt BT_CLR		&trans 			&trans 			&out OUT_USB			&trans 	&trans 	&trans 	&trans 	&bootloader
+														&trans 			&trans 					&trans 	&trans 
 		>;
 		};	
         
