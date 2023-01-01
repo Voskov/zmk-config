@@ -80,6 +80,9 @@
 	};
 };
 
+#define HRML(k1,k2,k3,k4) &lht LGUI k1   &lht LALT k2   &lht LSHFT k3   &lht LCTRL k4
+#define HRMR(k1,k2,k3,k4) &rht RCTRL k1  &rht RSHFT k2  &rht RALT k3    &rht RGUI k4
+
 #define COMBO(name, keypress, keypos) \
 combo_##name {                        \
 	timeout-ms = <30>;                \
@@ -92,8 +95,21 @@ combo_##name {                        \
 20 21 22 23 24        25 26 27 28 29
 			30 31  32 33             */
 
-#define HRML(k1,k2,k3,k4) &lht LGUI k1   &lht LALT k2   &lht LSHFT k3   &lht LCTRL k4
-#define HRMR(k1,k2,k3,k4) &rht RCTRL k1  &rht RSHFT k2  &rht RALT k3    &rht RGUI k4
+/ {
+	combos {
+		compatible = "zmk,combos";
+		COMBO(lgui,     &kp LGUI,   20 21)
+		COMBO(lalt,     &kp LALT,   21 22)
+		COMBO(lshft,    &kp LSHFT,  22 23)
+		COMBO(lctrl,    &kp LCTRL,  23 0)
+		COMBO(rctrl,    &kp RCTRL,  9 26)
+		COMBO(rshft,    &kp RSHFT,  26 27)
+		COMBO(ralt,     &kp RALT,   27 28)
+		COMBO(rgui,     &kp RGUI,   28 29)
+	};
+};
+
+
 
 #define qwrt 0
 #define qwrt_gm 1
