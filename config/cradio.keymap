@@ -106,9 +106,9 @@ combo_##name {                        \
 		COMBO(rshft,    &kp RSHFT,  26 27)
 		COMBO(ralt,     &kp RALT,   27 28)
 		COMBO(rgui,     &kp RGUI,   28 29)
+		COMBO(esc,      &kp ESC,    24 1)
 	};
 };
-
 
 
 #define qwrt 0
