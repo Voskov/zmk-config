@@ -163,9 +163,9 @@ combo_##name {                        \
 
        	reverse_CMK_layer_gaming {
 		bindings = <
-		&kp B   &kp W   &kp T   &kp SEMICOLON   &kp D 		&kp N   &kp I   &kp L   	&kp J   &kp E
-		&kp A   &kp P   &kp R   &kp G   		&kp S       &kp H   &kp K   &kp F   	&kp U   &kp Y
-		&kp Z   &kp X   &kp C   &kp V   		&kp Q		&kp E   &kp M   &kp CMMA    &kp DOT &kp FSLH
+		&kp B   &kp W   &kp K	&kp S   &kp F 		&kp O   &kp	I   &kp L	 &kp SEMICOLON  &kp J
+		&kp A   &kp D   &kp G   &kp E   &kp T       &kp	H  	&kp Y   &kp N	 &kp U   		&kp P
+		&kp Z   &kp X   &kp C   &kp V	&kp Q		&kp R	&kp M   &kp CMMA &kp DOT 		&kp FSLH
           				    &lt rise TAB   &lt lower SPACE			&lt lower SPACE     &lt rise RET
 		>;
 		};
@@ -199,4 +199,3 @@ combo_##name {                        \
         
 	};
 };
-
