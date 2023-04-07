@@ -80,6 +80,15 @@
 	};
 };
 
+#define qwrt 0
+#define qwrt_gm 1
+#define cmk 2
+#define cmk_gm 3
+#define reverse 4
+#define lower 5
+#define rise 6
+#define cfg 7
+
 #define HRML(k1,k2,k3,k4) &lht LGUI k1   &lht LALT k2   &lht LSHFT k3   &lht LCTRL k4
 #define HRMR(k1,k2,k3,k4) &rht RCTRL k1  &rht RSHFT k2  &rht RALT k3    &rht RGUI k4
 
@@ -112,15 +121,6 @@ combo_##name {                        \
 	};
 };
 
-
-#define qwrt 0
-#define qwrt_gm 1
-#define cmk 2
-#define cmk_gm 3
-#define reverse 4
-#define lower 5
-#define rise 6
-#define cfg 7
 
 / { 
 
