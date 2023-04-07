@@ -107,6 +107,8 @@ combo_##name {                        \
 		COMBO(ralt,     &kp RALT,   27 28)
 		COMBO(rgui,     &kp RGUI,   28 29)
 		COMBO(esc,      &kp ESC,    24 1)
+		COMBO(bspc,     &kp BSPC,   25 8)
+		COMBO(cfg,      &mo cfg,    30 33)
 	};
 };
 
