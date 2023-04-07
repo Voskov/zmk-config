@@ -175,10 +175,10 @@ combo_##name {                        \
 
 		gaming_experimental {
 		bindings = <
-		&kpt V		&kpt Q		&kpt W		&kpt E		&kpt R				&trans 		&kpt HOME	&kpt UP		&kpt END 	&trans 		
-		&kpt ESC	&kpt A		&kpt S		&kpt D		&kpt F				&trans 		&trans 		&kpt DOWN	&kpt RIGHT	&kpt RET		
-		&kpt LSHFT	&kpt Z		&kpt X		&kpt C		&kpt TAB			&kpt BSPC	&trans 		&trans 		&trans 		&kpt RSHFT
-											&lt rise TAB	&kpt SPACE		&kpt SPACE	&lt lower RET
+		&kp V		&kp Q		&kp W		&kp E		&kp R				&trans 		&kp HOME	&kp UP		&kp END 	&trans 		
+		&kp ESC		&kp A		&kp S		&kp D		&kp F				&trans 		&trans 		&kp DOWN	&kp RIGHT	&kp RET		
+		&kp LSHFT	&kp Z		&kp X		&kp C		&kp TAB				&kp BSPC	&trans 		&trans 		&trans 		&kp RSHFT
+											&lt rise TAB &kp SPACE		&kp SPACE	&lt lower RET
 		>;
 		};
 
