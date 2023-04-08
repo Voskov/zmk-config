@@ -118,7 +118,7 @@ combo_##name {                        \
 		COMBO(rgui,     &kp RGUI,   28 29)
 		COMBO(esc,      &kp ESC,    24 1)
 		COMBO(bspc,     &kp BSPC,   25 8)
-		COMBO(cfg,      &trans,    30 33)
+		COMBO(cfg,      &mo cfg,    30 33)
 	};
 };
 
@@ -205,7 +205,7 @@ combo_##name {                        \
 		&trans	        &bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 4	&bt BT_SEL 5			&to qwrt 	    &to qwrt_gm &to cmk &to cmk_gm 	&kp PSCRN
 		&sys_reset		&bt BT_PRV		&bt BT_NXT		&out OUT_BLE	&trans      	 		&kp PAUSE_BREAK &trans 		&trans 	&trans 		&sys_reset
 		&bootloader		&bt BT_CLR		&trans 			&out OUT_USB	&bt BT_SEL 0    		&trans	    	&trans 		&to gaming 	&to reverse 		&bootloader
-														&trans 			&trans 					&trans		&trans
+														&trans 			&trans 					&trans			&trans
 		>;
 		};	
         
