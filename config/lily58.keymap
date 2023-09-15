@@ -79,7 +79,7 @@
 };
 
 #define qwrt_hm 0
-#define qwrt_gm
+#define qwrt_gm 1
 #define lwr 2
 #define rse 3
 #define cfg 4
