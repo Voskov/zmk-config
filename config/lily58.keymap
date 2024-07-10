@@ -91,7 +91,7 @@
 
 #define COMBO(name, keypress, keypos) \
 combo_##name {                        \
-	timeout-ms = <30>;                \
+	timeout-ms = <50>;                \
 	bindings = <keypress>;            \
 	key-positions = <keypos>;         \
 };
@@ -105,7 +105,7 @@ combo_##name {                        \
 / {
 	combos {
 		compatible = "zmk,combos";
-		COMBO(cfg,	&mo cfg,	53	54)
+		COMBO(cfg,	&mo cfg,	52	55)
 	};
 };
 
@@ -177,10 +177,10 @@ combo_##name {                        \
 
 		config_layer {
 			bindings = <
-&bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4							&to qwrt_hm		&to qwrt_gm	&trans  &trans  &trans  &trans
-&trans		&trans			&trans			&trans			&trans			&trans							 		&kp PAUSE_BREAK	&trans		&trans	&trans	&trans	&trans
-&trans		&trans			&trans			&trans			&trans			&trans							 		&kp PSCRN		&trans		&trans	&trans	&trans	&trans
-&trans		&trans			&trans			&trans			&trans			&trans		&ext_power EP_ON	&trans 	&trans			&trans		&trans	&trans	&trans	&trans
+&bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4							&to qwrt_hm		&to qwrt	&to qwrt_gm	&trans  &trans  &trans
+&trans		&trans			&trans			&trans			&trans			&trans							 		&kp PAUSE_BREAK	&trans		&trans		&trans	&trans	&trans
+&trans		&trans			&trans			&trans			&trans			&trans							 		&kp PSCRN		&trans		&trans		&trans	&trans	&trans
+&trans		&trans			&trans			&trans			&trans			&trans		&ext_power EP_ON	&trans 	&trans			&trans		&trans		&trans	&trans	&trans
 											&trans			&trans			&trans		&ext_power EP_OFF	&trans 	&trans			&trans		&trans
 			>;
 
