@@ -153,11 +153,11 @@ combo_##name {                        \
 
 		lwr_layer {
 			bindings = <
-&kp TILDE	&trans		&trans		&trans		&trans		&kp BSPC					&trans		&trans		&trans		&trans		&trans		&trans
-&kp DEL		&kp TAB		&kp EXCL	&kp AT		&kp LBRC	&kp RBRC					&kp PG_UP	&kp HOME	&kp UP		&kp END		&kp BSPC	&kp PIPE
-&trans		&kp ESC		&kp HASH	&kp ASTRK	&kp LBKT	&kp RBKT					&kp PG_DN	&kp LEFT	&kp DOWN	&kp RIGHT	&kp SQT		&kp TILDE
-&trans		&kp GRAVE	&kp DLLR	&kp AMPS	&kp LPAR	&kp RPAR	&trans	&trans	&kp MINUS	&kp EQUAL	&kp DEL		&kp INS		&kp RET		&kp PIPE
-						&trans		&trans		&trans		&trans		&trans	&trans	&kp PG_UP	&kp PG_DN
+&kp TILDE	&trans		&trans		&trans		&trans		&kp BSPC					&trans			&trans		&trans		&trans		&trans		&trans
+&kp DEL		&kp TAB		&kp EXCL	&kp AT		&kp LBRC	&kp RBRC					&kp PG_UP		&kp HOME	&kp UP		&kp END		&kp BSPC	&kp PIPE
+&trans		&kp ESC		&kp HASH	&kp ASTRK	&kp LBKT	&kp RBKT					&kp PG_DN		&kp LEFT	&kp DOWN	&kp RIGHT	&kp SQT		&kp TILDE
+&trans		&kp GRAVE	&kp DLLR	&kp AMPS	&kp LPAR	&kp RPAR	&trans	&trans	&kp MINUS		&kp EQUAL	&kp DEL		&kp INS		&kp RET		&kp PIPE
+						&trans		&trans		&trans		&trans		&trans	&trans	&kp PG_UP		&kp PG_DN
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -165,11 +165,11 @@ combo_##name {                        \
 
 		raise_layer {
 			bindings = <
-&kp GRAVE	&trans	&trans	&trans	&trans	&trans								&trans	&trans		&trans	&trans	&trans		&trans
-&kp GRAVE	&kp F1	&kp F2	&kp F3	&kp F4	&kp C_VOL_UP						&trans	&kp N7		&kp N8	&kp N9	&kp BSPC	&trans
-&trans		&kp F5	&kp F6	&kp F7	&kp F8	&kp C_VOL_DN						&trans	&kp N4		&kp N5	&kp N6	&trans		&trans
-&trans		&kp F9	&kp F10	&kp F11	&kp F12	&kp K_APP		&trans	&trans	&kp N0	&kp N1		&kp N2	&kp N3	&kp BSLH	&trans
-							&trans	&trans	&trans			&trans	&trans	&trans	&kp HOME	&kp END
+&kp GRAVE	&trans		&trans		&trans		&trans		&trans						&trans			&trans		&trans		&trans		&trans		&trans
+&kp GRAVE	&kp F1		&kp F2		&kp F3		&kp F4		&kp C_VOL_UP				&kp C_VOL_UP	&kp N7		&kp N8		&kp N9		&kp BSPC	&trans
+&trans		&kp F5		&kp F6		&kp F7		&kp F8		&kp C_VOL_DN				&kp C_VOL_DN	&kp N4		&kp N5		&kp N6		&kp BSLH	&trans
+&trans		&kp F9		&kp F10		&kp F11		&kp F12		&kp K_APP	&trans	&trans	&kp N0			&kp N1		&kp N2		&kp N3		&kp FSLH	&trans
+									&trans		&trans		&trans		&trans	&trans	&trans			&kp HOME	&kp END
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
