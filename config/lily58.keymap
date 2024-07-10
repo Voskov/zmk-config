@@ -79,6 +79,30 @@
 	};
 };
 
+/ {
+	macros {
+		root: root {
+			label = "root";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
+			bindings
+			= <&macro_tap &kp O>
+			, <&macro_tap &kp I>
+			, <&macro_tap &kp U>
+			, <&macro_tap &kp O>
+			, <&macro_tap &kp I>
+			, <&macro_tap &kp U>
+			, <&macro_tap &kp O>
+			, <&macro_tap &kp I>
+			, <&macro_tap &kp U>
+			, <&macro_tap &kp RET>
+			;
+		};
+	};
+};
+
 #define qwrt_hm 0
 #define qwrt 1
 #define qwrt_gm 2
