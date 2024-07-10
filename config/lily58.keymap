@@ -80,10 +80,11 @@
 };
 
 #define qwrt_hm 0
-#define qwrt_gm 1
-#define lwr 2
-#define rse 3
-#define cfg 4
+#define qwrt 1
+#define qwrt_gm 2
+#define lwr 3
+#define rse 4
+#define cfg 5
 
 #define HRML(k1,k2,k3,k4) &lht LGUI k1   &lht LALT k2   &lht LSHFT k3   &lht LCTRL k4
 #define HRMR(k1,k2,k3,k4) &rht RCTRL k1  &rht RSHFT k2  &rht RALT k3    &rht RGUI k4
@@ -133,6 +134,18 @@ combo_##name {                        \
 &kp ESC		&kp A	&kp S	&kp D		&kp F		&kp G										&kp H			&kp J		&kp K		&kp L	&kp SEMI	&kp SQT
 &kp LCTRL	&kp Z	&kp X	&kp C		&kp V		&kp B		&kp K_APP		&kp DEL			&kp N			&kp M		&kp COMMA	&kp DOT	&kp FSLH	&mt RSHFT ENTER
 							&kp LGUI	&kp LALT	&lt rse TAB	&lt lwr SPACE	&lt lwr SPACE	&lt rse RET  	&kp LEFT	&kp RIGHT
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+		};
+
+		qwerty_gaming_mod {
+			bindings = <
+&kp ESC		&kp N1	&kp N2	&kp N3		&kp N4		&kp N5										&kp N6			&kp N7		&kp N8		&kp N9	&kp N0		&kp BSPC
+&kp TAB		&kp Q	&kp W 	&kp E		&kp R		&kp T										&kp Y			&kp U		&kp I		&kp O	&kp P		&kp MINUS
+&kp LSHFT	&kp A	&kp S	&kp D		&kp F		&kp G										&kp H			&kp J		&kp K		&kp L	&kp SEMI	&kp SQT
+&kp LCTRL	&kp Z	&kp X	&kp C		&kp V		&kp B			&kp K_APP	&kp DEL			&kp N			&kp M		&kp COMMA	&kp DOT	&kp FSLH	&kp ENTER
+							&kp LALT	&lt rse TAB	&lt lwr SPACE	&kp SPACE	&kp SPACE		&lt lwr SPACE	&lt rse RET &kp LEFT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
