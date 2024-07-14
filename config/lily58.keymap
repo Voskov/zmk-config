@@ -130,8 +130,8 @@ combo_##name {                        \
 	combos {
 		compatible = "zmk,combos";
 		COMBO(cfg,	&mo cfg,	52	55)
-		COMBO(cfg,	&mo cfg,	50	51)
-		COMBO(cfg,	&mo cfg,	56	57)
+		COMBO(cfg_l,	&mo cfg,	50	51)
+		COMBO(cfg_r,	&mo cfg,	56	57)
 	};
 };
 
