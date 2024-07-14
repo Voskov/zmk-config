@@ -206,7 +206,7 @@ combo_##name {                        \
 &bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4							&to qwrt_hm		&to qwrt	&to qwrt_gm	&trans  &trans  &trans
 &trans		&trans			&trans			&trans			&trans			&trans							 		&kp PAUSE_BREAK	&trans		&trans		&trans	&trans	&trans
 &sys_reset	&trans			&trans			&trans			&trans			&trans							 		&kp PAUSE_BREAK	&trans		&trans		&trans	&trans	&sys_reset
-&bootloader	&trans			&trans			&trans			&trans			&trans		&ext_power EP_ON	&trans 	&kp PSCRN		&trans		&trans		&trans	&trans	&bootloader
+&bootloader	&trans			&trans			&root			&trans			&trans		&ext_power EP_ON	&trans 	&kp PSCRN		&trans		&trans		&trans	&trans	&bootloader
 											&trans			&trans			&trans		&ext_power EP_OFF	&trans 	&trans			&trans		&trans
 			>;
 
