@@ -106,9 +106,10 @@
 #define qwrt_hm 0
 #define qwrt 1
 #define qwrt_gm 2
-#define lwr 3
-#define rse 4
-#define cfg 5
+#define col_rev 3
+#define lwr 4
+#define rse 5
+#define cfg 6
 
 #define HRML(k1,k2,k3,k4) &lht LGUI k1   &lht LALT k2   &lht LSHFT k3   &lht LCTRL k4
 #define HRMR(k1,k2,k3,k4) &rht RCTRL k1  &rht RSHFT k2  &rht RALT k3    &rht RGUI k4
@@ -177,6 +178,18 @@ combo_##name {                        \
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
+		reverse_colemak {
+			bindings = <
+&kp ESC		&kp N1	&kp N2	&kp N3		&kp N4		&kp N5										&kp N6		&kp N7		&kp N8		&kp N9		&kp N0	&kp BSPC
+&kp TAB		&kp Q	&kp W	&kp F 		&kp P		&kp G										&kp J		&kp L		&kp U		&kp Y		&kp SQT	&kp MINUS
+&kp ESC		&kp A	&kp R	&kp S		&kp T		&kp D										&kp H		&kp N		&kp E		&kp I		&kp O	&kp SQT
+&kp LCTRL	&kp Z	&kp X	&kp C		&kp V		&kp B		&kp K_APP		&kp DEL			&kp K		&kp M		&kp COMMA &kp DOT &kp FSLH	&mt RSHFT ENTER
+							&kp LGUI	&kp LALT	&lt rse TAB	&lt lwr SPACE	&lt lwr SPACE	&lt rse RET	&kp LEFT	&kp RIGHT
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+		};
+
 		lwr_layer {
 			bindings = <
 &kp TILDE	&trans		&trans		&trans		&trans		&kp BSPC					&trans			&trans		&trans		&trans		&trans		&trans
@@ -203,10 +216,10 @@ combo_##name {                        \
 
 		config_layer {
 			bindings = <
-&bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4							&to qwrt_hm		&to qwrt	&to qwrt_gm	&trans  &trans  &trans
-&trans		&trans			&trans			&trans			&trans			&trans							 		&kp PAUSE_BREAK	&trans		&trans		&trans	&trans	&trans
-&sys_reset	&trans			&trans			&trans			&trans			&trans							 		&kp PAUSE_BREAK	&trans		&trans		&trans	&trans	&sys_reset
-&bootloader	&trans			&trans			&root			&trans			&trans		&ext_power EP_ON	&trans 	&kp PSCRN		&trans		&trans		&trans	&trans	&bootloader
+&bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4							&to qwrt_hm		&to qwrt	&to qwrt_gm	&to col_rev	&trans  &trans
+&trans		&trans			&trans			&trans			&trans			&trans							 		&kp PAUSE_BREAK	&trans		&trans		&trans		&trans	&trans
+&sys_reset	&trans			&trans			&trans			&trans			&trans							 		&kp PAUSE_BREAK	&trans		&trans		&trans		&trans	&sys_reset
+&bootloader	&trans			&trans			&root			&trans			&trans		&ext_power EP_ON	&trans 	&kp PSCRN		&trans		&trans		&trans		&trans	&bootloader
 											&trans			&trans			&trans		&ext_power EP_OFF	&trans 	&trans			&trans		&trans
 			>;
 
