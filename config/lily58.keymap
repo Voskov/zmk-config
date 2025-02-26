@@ -181,14 +181,13 @@ combo_##name {                        \
 		};
 
 		reverse_colemak {
-			bindings = <
-&kp ESC		&kp N1	&kp N2	&kp N3		&kp N4		&kp N5										&kp N6		&kp N7		&kp N8		&kp N9		&kp N0	&kp BSPC
-&kp TAB		&kp Q	&kp W	&kp F 		&kp P		&kp G										&kp J		&kp L		&kp U		&kp Y		&kp SQT	&kp MINUS
-&kp ESC		&kp A	&kp R	&kp S		&kp T		&kp D										&kp H		&kp N		&kp E		&kp I		&kp O	&kp SQT
-&kp LCTRL	&kp Z	&kp X	&kp C		&kp V		&kp B		&kp K_APP		&kp DEL			&kp K		&kp M		&kp COMMA &kp DOT &kp FSLH	&mt RSHFT ENTER
-							&kp LGUI	&kp LALT	&lt rse TAB	&lt lwr SPACE	&lt lwr SPACE	&lt rse RET	&kp LEFT	&kp RIGHT
-			>;
-
+    bindings = <
+&kp ESC     &kp N1  &kp N2  &kp N3      &kp N4      &kp N5                                      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0  &kp BSPC
+&kp TAB     &kp Q   &kp W   &kp K   	&kp S 		&kp F									  	&kp O 		&kp I 		&kp L 		&kp SEMI 	&kp R  	&kp MINUS
+&kp LSHFT	&kp A	&kp D 	&kp G 		&kp E 		&kp T									  	&kp H 		&kp Y 		&kp N 		&kp U 		&kp P 	&kp SQT
+&kp LCTRL	&kp Z	&kp X	&kp C		&kp V		&kp B		&kp K_APP		&kp DEL			&kp J 		&kp M 		&kp COMMA	&kp DOT	&kp FSLH	&kp ENTER
+                            &kp LGUI    &kp LALT    &lt rse TAB &lt lwr SPACE   &lt lwr SPACE  &lt rse RET &kp LEFT    &kp RIGHT
+    >;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
