@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /c/zmk-config status)",
+      "Bash(git -C /c/zmk-config diff)",
+      "Bash(git -C /c/zmk-config log --oneline -10)",
+      "Bash(git -C /c/zmk-config add config/lily58.keymap)",
+      "Bash(git -C /c/zmk-config commit -m \"add reverse_colemak_shifted layer\")",
+      "Bash(git -C /c/zmk-config pull --rebase)",
+      "Bash(git -C /c/zmk-config log --oneline origin/main -10)",
+      "Bash(git -C /c/zmk-config diff config/lily58.keymap)",
+      "Bash(git -C /c/zmk-config show :2:config/lily58.keymap)",
+      "Bash(git -C /c/zmk-config rebase --continue)",
+      "Bash(git -C /c/zmk-config log --oneline -5)",
+      "Bash(git -C /c/zmk-config commit --amend --no-edit)",
+      "Bash(git -C /c/zmk-config log --oneline -3)",
+      "Bash(git -C /c/zmk-config add .claude/settings.json)",
+      "Bash(git -C /c/zmk-config commit -m \"add .claude/settings.json permission allowlist\")"
+    ]
+  }
+}
