@@ -234,7 +234,7 @@ combo_##name {                        \
 &kp TAB		&kp Q	&kp Q	&kp W 		&kp K		&kp S										&kp O		&kp I		&kp L		&kp SEMI	&kp R	&kp MINUS
 &kp LSHFT	&kp A	&kp A	&kp D		&kp G		&kp E										&kp H		&kp Y		&kp N		&kp U		&kp P	&kp SQT
 &kp LCTRL	&kp Z	&kp Z	&kp X		&kp C		&kp V		&kp K_APP		&kp DEL			&kp J		&kp M		&kp COMMA &kp DOT &kp FSLH	&kp ENTER
-							&kp LGUI	&kp LALT	&lt rse TAB	&lt lwr SPACE	&lt lwr SPACE	&lt rse RET	&kp LEFT	&kp RIGHT
+							&kp LGUI	&kp LALT	&kp TAB		&kp SPACE	&lt lwr SPACE	&lt rse RET	&kp LEFT	&kp RIGHT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
